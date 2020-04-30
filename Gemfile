@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+# security
+gem 'dotenv-rails', groups: [:development, :test]
 # front
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
