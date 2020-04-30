@@ -1,5 +1,12 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
+<div class="background-container">
+  <div class="d-flex justify-content-between pt-3">
+    <h2>New Dose</h2>
+  </div>
+
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.association :ingredient %>
   <%= f.input :description %>
   <%= f.button :submit %>
-<% end %>
+  <% end %>
+
+</div>
