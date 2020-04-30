@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+#container-style {
+  background-color: $main-color;
+   height: 100%;
+}
+
+.background-container{
+  height: 100vh;
+}
+
+#banner-content {
+  height: 60vh;
+}

@@ -1,4 +1,14 @@
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
+<div class="background-container">
+
+  <div class="d-flex justify-content-between pt-3">
+    <h2>New Drink</h2>
+  </div>
+
+    <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.button :submit %>
+    <% end %>
+
+
+
+</div>

@@ -1,17 +1,24 @@
+<div class="home-banner text-center">
+
+  <div class="d-flex flex-column justify-content-around" id="banner-content">
+
+    <h1 class="align-self-center" href="<%=  cocktails_path  %>">The art of drinking</h1>
+    <h4><em><span id="banner-typed-text"></span></em></h4>
+    <div>
+      <a class="btn btn-new" href="<%= new_cocktail_path %>">New Drink</a>
+    </div>
+  </div>
+</div>
+
 <div class="row justify-content-around">
   <% @cocktails.each do |cocktail|%>
-      <div class="col-sm-3 m-1 p-2">
-        <div class="card text-center" style="width: 18rem;">
-        <img src="https://images.unsplash.com/photo-1453824979084-c8fd42932378?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" style="heigh: 80px" alt="...">
-        <div class="card-body">
-          <h4 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
-          <p class="card-text"><%= cocktail.name %></p>
-          <%= link_to "Remove",
-                  cocktail_path(cocktail),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" }, :class => "btn btn-primary btn-sm" %>
+    <div class="col-sm-2-md-3 m-1 p-2">
+        <div class="card text-center card-style">
+          <img src="https://images.unsplash.com/photo-1453824979084-c8fd42932378?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" id="card-img" alt="...">
+          <div class="card-body">
+            <h4 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail), :id=>"card-link-style" %></h4>
+          </div>
         </div>
       </div>
-    </div>
   <% end %>
 </div>
