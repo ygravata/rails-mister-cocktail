@@ -1,7 +1,13 @@
 <div class="background-container">
-
   <div class="d-flex justify-content-between pt-3">
     <h2>New Drink</h2>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="<% root_path %>">Back</a> -->
+        <%= link_to 'Back', root_path,
+                              :class =>"nav-link active"%>
+      </li>
+    </ul>
   </div>
 
     <%= simple_form_for @cocktail do |f| %>
