@@ -13,6 +13,8 @@ user_serialized = open(url).read
 user = JSON.parse(user_serialized)
 drinks = user['drinks']
 
+Ingredient.destroy_all
+
 drinks.each do |drink|
-  Ingredient.create!(name: drink['strIngredient1'])
+  Ingredient.create!(name: drink['strIngredient1'].capitalize)
 end

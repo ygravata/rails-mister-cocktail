@@ -13,7 +13,7 @@
     <div class="col-lg-6 text-center justify-content-left pl-5" style="; color: white;">
       <div class="col-md-4 text-center justify-content-center" style="; color: white;">
         <div class="col-sm-3 text-center justify-content-center" style="padding-left: 0px; color: white;">
-          <h2><%= @cocktail.name %></h2>
+          <h2 class="show-text"><%= @cocktail.name.capitalize %></h2>
             <%= cl_image_tag  @cocktail.photo.key, width: 300, height: 250, crop: :scale, :style=>"background-size:cover; border-radius: 4px; border: 2px solid white;" %>
         </div>
       </div>
