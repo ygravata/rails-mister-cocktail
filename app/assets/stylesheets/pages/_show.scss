@@ -1,7 +1,7 @@
  .show-container {
    position: relative;
    background-size: cover;
-   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(tools.jpg);
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), image-url('tools.jpg');
    object-fit: cover;
    height: 100%;
    padding-bottom: 40px;
